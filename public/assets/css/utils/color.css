@@ -1,0 +1,21 @@
+/* Text */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary-foreground); }
+.text-muted { color: var(--muted-foreground); }
+.text-destructive { color: var(--destructive); }
+
+.text-success { color: var(--success); }
+.text-amber { color: var(--amber); }
+.text-sky { color: var(--sky); }
+
+/* Background */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-muted { background-color: var(--muted); }
+.bg-destructive { background-color: var(--destructive); }
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+
+.bg-success { background-color: var(--success); }
+.bg-amber { background-color: var(--amber); }
+.bg-sky { background-color: var(--sky); }

@@ -1,0 +1,82 @@
+/* Filter Buttons Row with Flagged Toggle */
+.filter-buttons-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flagged-toggle {
+  margin-left: auto;
+}
+
+.flagged-toggle.active {
+  background: var(--warning);
+  color: white;
+  border-color: var(--warning);
+}
+
+/* Rating Stars */
+.rating-stars {
+  display: flex;
+  gap: 0.25rem;
+  color: #FFC107;
+  font-size: 0.875rem;
+}
+
+.rating-stars .far {
+  color: var(--gray-300);
+}
+
+/* Review Comment */
+.review-comment {
+  display: block;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--gray-700);
+}
+
+/* Flagged Row Styling */
+.flagged-row {
+  background: rgba(251, 191, 36, 0.05);
+}
+
+.flagged-row:hover {
+  background: rgba(251, 191, 36, 0.1) !important;
+}
+
+/* Action Button - Flag */
+.action-btn.flag.flagged {
+  color: var(--warning);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.action-btn.flag:not(.flagged):hover {
+  background: rgba(251, 191, 36, 0.1);
+  color: var(--warning);
+}
+
+.action-btn.flag.flagged:hover {
+  background: rgba(251, 191, 36, 0.2);
+  color: var(--warning);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filter-buttons-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flagged-toggle {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .review-comment {
+    max-width: 200px;
+  }
+}

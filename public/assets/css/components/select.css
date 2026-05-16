@@ -1,0 +1,63 @@
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: var(--foreground);
+  line-height: 1.5;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tZG93bi1pY29uIGx1Y2lkZS1jaGV2cm9uLWRvd24iPjxwYXRoIGQ9Im02IDkgNiA2IDYtNiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--ring);
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+
+.select:focus {
+  outline: none;
+  border-color: var(--ring);
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+/* Variants */
+.select-primary {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+}
+
+.select-secondary {
+  border-color: var(--secondary);
+  color: var(--secondary-foreground);
+  background-color: var(--secondary);
+}
+
+.select-outline {
+  background-color: transparent;
+}
+
+/* Sizes */
+.select-sm {
+  padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.select-lg {
+  padding: 0.75rem 2.25rem 0.75rem 1rem;
+  font-size: 1.125rem;
+}
+
+/* Full Width */
+.select-block {
+  width: 100%;
+}

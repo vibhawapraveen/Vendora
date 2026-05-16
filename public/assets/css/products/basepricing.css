@@ -1,0 +1,68 @@
+.pricing-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .price-input-group {
+            position: relative;
+        }
+
+        .price-input-group .currency-symbol {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6b7280;
+            font-weight: 600;
+            z-index: 1;
+        }
+
+        .price-input-group input {
+            padding-left: 2.5rem;
+        }
+
+        .step-indicator {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .step.completed {
+            background: #10b981;
+            color: white;
+        }
+
+        .step.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .step.pending {
+            background: #f3f4f6;
+            color: #6b7280;
+        }

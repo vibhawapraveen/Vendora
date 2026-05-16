@@ -1,0 +1,45 @@
+    .blue {
+      color: #2563EB;
+    }
+
+    .gray {
+      color: #4B5563;
+    }
+
+    .red {
+      color: #DC2626;
+    }
+
+    .yellow {
+      color: #EAB308;
+    }
+
+    .green {
+      color: #16A34A;
+    }
+
+    .lightblue {
+      color: #0EA5E9;
+    }
+
+    .purple {
+      color: #9333EA;
+    }
+
+    .orange {
+      color: #F97316;
+    }
+
+    /* Variant Type Badges */
+/* Variant Type Badges */
+.badge-multi {
+  background-color: #e0f2fe !important;
+  color: #0369a1 !important;
+  border-color: #bae6fd !important;
+}
+
+.badge-single {
+  background-color: #f3f4f6 !important;
+  color: #4b5563 !important;
+  border-color: #d1d5db !important;
+}

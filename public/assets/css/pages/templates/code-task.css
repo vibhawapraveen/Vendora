@@ -1,0 +1,16 @@
+.category_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--bg-white);
+  gap: 20px;
+}
+
+.category_card {
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+  max-width: 100%;
+}
+
+/* .card-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+} */
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.card-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  margin-top: 1rem;
+}

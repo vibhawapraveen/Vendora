@@ -1,0 +1,5 @@
+/* Variant selection styling specific to this page */
+        .switch-label:has(input[type="radio"]:checked) {
+            border-color: var(--primary);
+            background-color: color-mix(in oklch, var(--primary) 3%, var(--card));
+        }

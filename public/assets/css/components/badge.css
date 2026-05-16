@@ -1,0 +1,77 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  gap: 0.25rem;
+}
+
+/* Sizes */
+.badge-sm {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+}
+
+.badge-lg {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.65rem;
+}
+
+/* Variants */
+.badge-default {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+}
+
+.badge-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.badge-secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.badge-outline {
+  background-color: transparent;
+  border-color: var(--border);
+  color: var(--foreground);
+}
+
+.badge-destructive {
+  background-color: var(--destructive-foreground);
+  color: var(--destructive);
+}
+
+.badge-success {
+  background-color: var(--success-foreground);
+  color: var(--success);
+}
+
+
+/* Dot-style badge */
+.badge-dot {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.badge-dot::before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--foreground);
+}

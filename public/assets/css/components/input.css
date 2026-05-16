@@ -1,0 +1,97 @@
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--input);
+  background-color: var(--background);
+  color: var(--foreground);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--ring);
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.input::placeholder {
+  color: var(--muted-foreground);
+}
+
+/* === Size Variants === */
+.input-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.input-lg {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: calc(var(--radius) + 2px);
+}
+
+/* === State Variants === */
+.input-error {
+  border-color: var(--destructive);
+  /* box-shadow: 0 0 0 2px var(--destructive); */
+}
+.input-error:focus {
+  border-color: var(--destructive);
+  box-shadow: 0 0 0 2px var(--destructive) !important;
+}
+
+/* Optional class for disabling */
+.input-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Checkbox Container */
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hidden native checkbox */
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 2px solid var(--border);
+  border-radius: 0.25rem;
+  background: var(--background);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+}
+
+/* Checkmark */
+.checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+  background-color: var(--primary);
+  clip-path: polygon(14% 44%, 0% 65%, 50% 100%, 100% 20%, 80% 0%, 43% 62%);
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* Label */
+.checkbox label {
+  font-size: 0.95rem;
+  color: var(--foreground);
+  cursor: pointer;
+}

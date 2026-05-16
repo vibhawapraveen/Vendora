@@ -1,0 +1,138 @@
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.section-description {
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.attribute-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.attribute-label {
+    display: block;
+    color: #374151;
+    font-weight: 500;
+}
+
+.attribute-input-group {
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+.attribute-input-wrapper {
+    flex: 1;
+}
+
+.attribute-input {
+    width: 100%;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    color: #ef4444;
+}
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.value-tag {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.value-input-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.value-input {
+    flex: 1;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.tip-text {
+    color: #6b7280;
+    font-size: 0.75rem;
+}
+
+.btn-add-attribute {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Step indicator styles specific to attributes page */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.step.completed {
+    background: #10b981;
+    color: white;
+}
+
+.step.active {
+    background: #2563eb;
+    color: white;
+}
+
+.step.pending {
+    background: #f3f4f6;
+    color: #6b7280;
+}

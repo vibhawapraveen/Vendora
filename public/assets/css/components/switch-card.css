@@ -1,0 +1,43 @@
+.switch-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.switch-label {
+  display: block;
+  background-color: var(--card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.switch-label:hover {
+  border-color: var(--ring);
+}
+
+.switch-label input[type="radio"] {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  accent-color: var(--primary);
+  transform: scale(1.2);
+}
+
+.switch-label.selected {
+  border-color: var(--primary);
+  background-color: color-mix(in oklch, var(--primary) 3%, var(--card));
+}
+
+.switch-title {
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+.switch-desc {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+}
